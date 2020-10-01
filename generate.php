@@ -88,7 +88,7 @@ if (!isset($_POST["submit"])) {
                     </tr>
                     <tr>
                         <td>Nama Siswa</td>
-                        <td><span id="nama"><?php echo strtoupper($_POST["nama"]); ?></span></td>
+                        <td><span id="nama"><?php echo htmlspecialchars(strtoupper($_POST["nama"]), ENT_QUOTES); ?></span></td>
                     </tr>
                     <tr>
                         <td>NISN Siswa</td>
@@ -117,11 +117,11 @@ if (!isset($_POST["submit"])) {
                             <table class="pull-left table table-program">
                                 <tbody><tr>
                                     <td width="120px">PTN</td>
-                                    <td><b><span id="ptn"><?php echo strtoupper($_POST["kodeptn"]); ?></span></b></td>
+                                    <td><b><span id="ptn"><?php echo htmlspecialchars(strtoupper($_POST["kodeptn"]), ENT_QUOTES); ?></span></b></td>
                                 </tr>
                                 <tr>
                                     <td>Program Studi</td>
-                                    <td><b><span id="prodi"><?php echo strtoupper($_POST["prodi"]); ?></span></b></td>
+                                    <td><b><span id="prodi"><?php echo htmlspecialchars(strtoupper($_POST["prodi"]), ENT_QUOTES); ?></span></b></td>
                                 </tr>
                             </tbody></table>
                         </td>
